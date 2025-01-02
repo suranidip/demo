@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<style>
+  body,
+  html {
+    height: 100%;
+    margin: 0;
+  }
+
+  .bgimg {
+    /* background-image: url('./test.png'); */
+    background-color: #754ffe;
+    /* background-image: url(../assets/images/mentor/mentor-glow.svg); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* color: #754ffe; */
+    /* font-family: "Courier New", Courier, monospace; */
+    font-family: "jcfonts linotte", Arial, sans-serif;
+
+    font-size: 25px;
+  }
+
+  .topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+  }
+
+  .bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+  }
+
+  .middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  b {
+    font-size: 150px;
+  }
+
+  .bcls {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffff;
+    color: #754ffe;
+  }
+
+  hr {
+    margin: auto;
+    width: 40%;
+  }
+
+  .blink_text {
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes blinker {
+    0% {
+      opacity: 1.0;
+    }
+
+    50% {
+      opacity: 0.0;
+    }
+
+    100% {
+      opacity: 1.0;
+    }
+  }
+</style>
+
+<body>
+
+  <div class="bgimg">
+    <div class="topleft">
+      <!-- <p>Logo</p> -->
+    </div>
+    <div class="middle">
+      <b class="bcls">GIT - COURSE<b class="blink_text" style="border: unset;color: #ffff;">.</b>DIP</b>
+    </div>
+
+    <div class="bottomleft">
+    </div>
+  </div>
+
+</body>
+
+</html>
