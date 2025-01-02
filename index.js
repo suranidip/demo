@@ -4,6 +4,10 @@ const app = express()
 const port = 8080
 
 app.use(express.static(path.join(__dirname + "/public")));
+app.get("api",()=>{
+  const name = "jay"
+  console.log(name);
+});
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
